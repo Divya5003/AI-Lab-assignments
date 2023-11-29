@@ -131,7 +131,7 @@ int main()
             switch (turn)
             {
             case 1:
-                go(5);
+                go(1);
                 break;
             case 2:
                 if (board[4] == blank)
@@ -229,9 +229,9 @@ int main()
             cout << "O is the winner!!" << endl;
             break;
         }
+        if (turn == 10)
+            cout << "It's a draw!" << endl;
     }
-    if (turn == 10)
-        cout << "It's a draw!" << endl;
 
     return 0;
 }
